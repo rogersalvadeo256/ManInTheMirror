@@ -2,6 +2,8 @@
 
 This is a simple C# Program that can hide RAR files into images
 
+![alt text](https://i.kym-cdn.com/photos/images/newsfeed/001/442/736/7c7.gif)
+
 # Hide your secrets
 
 If you have any secret thing, keep it away from the others with Man In The Mirrors
