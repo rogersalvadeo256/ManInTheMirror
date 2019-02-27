@@ -7,6 +7,6 @@ This is a simple C# Program that can hide RAR files into images
 If you have any secret thing, keep it away from the others with Man In The Mirrors
 Put a password on your RAR files and double the security 
 
-## What future awaits
+## What about the name?
 
-An option to give a name to the final file and to select a folder to store it.
+The name takes reference in the Jojo's Bizarre Adventure ability with the same name, which can hide people and things inside a Mirror.
