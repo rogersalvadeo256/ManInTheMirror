@@ -109,7 +109,19 @@ namespace Man_in_the_mirror
         private void label6_Click(object sender, EventArgs e)
         {
             var message = "I want to learn \"c#\"";
-            label6.Text=message;
+            //label6.Text=message;
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+
+                cmdCopy(fileImg, fileRar);
+                
+                
+
+            }
         }
 
         private void cmdCopy(string img, string rar)
@@ -131,7 +143,7 @@ namespace Man_in_the_mirror
                 {
                     command = "copy / b \"" + img + "\" + \"" + rar + "\" \"" + folderPath + "\"";
                 }
-                    label6.Text = command;
+                    //label6.Text = command;
 
                     string strCmdText;
                     
