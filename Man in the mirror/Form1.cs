@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -31,9 +32,11 @@ namespace Man_in_the_mirror
             {
                 btnDoIt.Enabled = true;
             }
-            
+            ofdImage.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+            ofdRar.FileName= "Zip Files|*.zip;*.rar";
 
-    }
+
+        }
 
         private void CriaPasta()
         {
@@ -133,7 +136,10 @@ namespace Man_in_the_mirror
                     string strCmdText;
                     
                     strCmdText = "/C "+command;
+                
+
                     System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+
 
                 label5.Text = label5.Text + folderPath;
             }
