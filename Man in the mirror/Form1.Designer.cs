@@ -40,6 +40,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.chooseFolder = new System.Windows.Forms.FolderBrowserDialog();
+            this.label6 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgTogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -80,7 +85,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Man_in_the_mirror.Properties.Resources.hd_winrar_icon_by_rhubarb_leaf_d523xqo;
-            this.pictureBox1.Location = new System.Drawing.Point(551, 128);
+            this.pictureBox1.Location = new System.Drawing.Point(554, 181);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(157, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +99,7 @@
             this.btnDoIt.Name = "btnDoIt";
             this.btnDoIt.Size = new System.Drawing.Size(191, 64);
             this.btnDoIt.TabIndex = 4;
-            this.btnDoIt.Text = "Hide Rar";
+            this.btnDoIt.Text = "Hide Files";
             this.btnDoIt.UseVisualStyleBackColor = true;
             this.btnDoIt.Click += new System.EventHandler(this.btnDoIt_Click);
             // 
@@ -123,7 +128,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(86, 104);
+            this.label3.Location = new System.Drawing.Point(59, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 7;
@@ -132,7 +137,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(562, 104);
+            this.label4.Location = new System.Drawing.Point(527, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 17);
             this.label4.TabIndex = 8;
@@ -147,11 +152,43 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Image Location:";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(543, 465);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "label6";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(309, 365);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(191, 22);
+            this.textBox1.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(309, 334);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(186, 17);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "insert a name to the final file";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 532);
+            this.ClientSize = new System.Drawing.Size(800, 537);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -186,6 +223,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.FolderBrowserDialog chooseFolder;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
 

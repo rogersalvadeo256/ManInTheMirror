@@ -31,8 +31,9 @@ namespace Man_in_the_mirror
             {
                 btnDoIt.Enabled = true;
             }
+            
 
-        }
+    }
 
         private void CriaPasta()
         {
@@ -80,6 +81,7 @@ namespace Man_in_the_mirror
                 label4.Text = ofdRar.FileName;
 
                 label2.Text = "Ready!";
+                
 
             }
 
@@ -101,18 +103,40 @@ namespace Man_in_the_mirror
 
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
+            var message = "I want to learn \"c#\"";
+            label6.Text=message;
+        }
 
         private void cmdCopy(string img, string rar)
         {
-            string command = "copy / b "+img+" + "+rar +" "+ @"C:\Users\Deus\Desktop\Copia\thingshidded.jpg";
-                   
-            string strCmdText;
+            string folderPath;
 
-            strCmdText = "/C "+command;
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            string command="";
 
-            label5.Text = label5.Text+@"C:\Users\Deus\Desktop\Copia";
+                if (chooseFolder.ShowDialog() == DialogResult.OK)
+                {
+                    folderPath = chooseFolder.SelectedPath;
+                //label6.Text = folderPath;
 
+                if (textBox1.Text != "")
+                {
+                    command = "copy / b \"" + img + "\" + \"" + rar + "\" \"" + folderPath + "\\"+textBox1.Text+".jpg\"";
+                }
+                else
+                {
+                    command = "copy / b \"" + img + "\" + \"" + rar + "\" \"" + folderPath + "\"";
+                }
+                    label6.Text = command;
+
+                    string strCmdText;
+                    
+                    strCmdText = "/C "+command;
+                    System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+
+                label5.Text = label5.Text + folderPath;
+            }
         }
 
 
