@@ -2,7 +2,7 @@
 
 This is a simple C# Program that can hide RAR files into images
 
-![alt text](https://i.kym-cdn.com/photos/images/newsfeed/001/442/736/7c7.gif)
+![alt text](https://github.com/RogerFerraro256/ManInTheMirror/blob/master/resources/7c7.gif)
 
 # Hide your secrets
 
