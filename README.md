@@ -1,3 +1,5 @@
+# THIS SHIT ONLY WORKS IN WINDOWS
+
 # Welcome to Man In The Mirror
 
 This is a simple C# Program that can hide RAR files into images
